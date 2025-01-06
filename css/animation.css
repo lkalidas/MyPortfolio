@@ -1,0 +1,214 @@
+.navbar a,
+.navbar ul li {
+    opacity: 0;
+    animation: slideRight 1.5s ease-in-out forwards;
+    animation-delay: calc(0.2s*var(--i));
+}
+
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero-image-animation {
+    opacity: 0;
+    animation: bounce 2s ease-in-out forwards;
+    animation-delay: .9s;
+}
+
+@keyframes bounce {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(-40deg);
+    }
+
+    50% {
+        transform: scale(1.1) rotate(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+}
+
+.hero-content-animation>* {
+    opacity: 0;
+    animation: slideUp 1s ease-in-out forwards;
+    animation-delay: calc(.5s*var(--i));
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.role::before {
+    content: 'Java Developer';
+    animation: changeRole 6s infinite;
+    font-weight: bold;
+
+}
+
+/* change role infinitely */
+
+@keyframes changeRole {
+    0% {
+        content: 'Java Developer';
+    }
+
+    33% {
+        content: 'Frontend Developer';
+    }
+
+    66% {
+        content: 'Full Stack Developer';
+    }
+
+    100% {
+        content: 'Java Developer';
+    }
+}
+
+/* skill progross bar animation */
+.skill-tech1-container .progross.Java span::after {
+    opacity: 0;
+    animation: growright 2s ease-in-out forwards;
+}
+
+.skill-tech1-container .progross.css span::after {
+    opacity: 0;
+    animation: growright 2s ease-in-out forwards;
+}
+
+.skill-tech1-container .progross.html span::after {
+    opacity: 0;
+    animation: growright 2s ease-in-out forwards;
+}
+
+.skill-tech1-container .progross.javascript span::after {
+    opacity: 0;
+    animation: growright 2s ease-in-out forwards;
+}
+
+.skill-tech1-container .progross.sql span::after {
+    opacity: 0;
+    animation: growright 2s ease-in-out forwards;
+}
+
+.skill-tech1-container .progross span {
+    opacity: 0;
+    animation: growright 1.5s ease-in-out forwards;
+}
+
+@keyframes growright {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+/* professional skills */
+.radial-bars .radial-bar .progress-bar {
+    stroke-width: 10;
+    stroke: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar {
+    100% {
+        stroke-dashoffset: -1;
+    }
+}
+
+.path-1 {
+    animation: path-1 1s 1s linear forwards;
+}
+
+.path-2 {
+    animation: path-2 1s 1s linear forwards;
+}
+
+.path-3 {
+    animation: path-3 1s 1s linear forwards;
+}
+
+.path-4 {
+    animation: path-4 1s 1s linear forwards;
+}
+
+@keyframes path-1 {
+    100% {
+        stroke-dashoffset: 50;
+    }
+}
+
+@keyframes path-2 { 
+    100% {
+        stroke-dashoffset: 250;
+    }
+}
+
+@keyframes path-3 {
+    100% {
+        stroke-dashoffset: 125;
+    }
+}
+
+@keyframes path-4 {
+    100% {
+        stroke-dashoffset: 80;
+    }
+}
+
+.percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    color: slategray;
+    animation: fadein 2s linear forwards;
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* about section */
+
+.about-text{
+  animation: slideUp 1s linear forwards;   
+}
+
+.about-image{
+    animation: slideRight 1.1s linear forwards;
+}
