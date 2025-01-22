@@ -209,7 +209,6 @@
     /* about section */
     .about-container {
         position: relative;
-        top: 10%;
         display: block;
         height: 100%;
     }
