@@ -120,6 +120,12 @@
     .hero-container{
         padding-bottom: 1.2rem;
     }
+
+    /* skill section */
+
+    .skill-tech1-container h1, .skill-tech2-container h1{
+        font-size: 1.5rem;
+    }
     /* project section */
     .slider-container {
         width: 30%;
@@ -193,6 +199,14 @@
     /* skill section */
     .skill-container {
         display: block;
+    }
+
+    .skill-tech1-container h1, .skill-tech2-container h1{
+        font-size: 1.5rem;
+    }
+    .skill-tech2-container{
+        position: relative;
+        top: 3rem;
     }
 
     /* project section */
