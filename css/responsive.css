@@ -1,0 +1,231 @@
+/* media query for responsive */
+
+/* @media (max-width: 1440px){
+    .slider-container{
+        width: 50%;
+    }
+    .card{
+        padding: 20px;
+        width: 715px;
+    } 
+} */
+
+@media (max-width: 1024px) {
+    .cvbtn {
+        display: none;
+    }
+
+    .download-link {
+        display: block;
+    }
+
+    #nav-menu {
+        display: none;
+        position: absolute;
+        right: 5%;
+        top: 10%;
+        z-index: 1000;
+        flex-direction: column;
+        background-color: var(--second-dark-clr);
+        width: 200px;
+        border-radius: 5px;
+        border: 1px solid gainsboro;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #nav-menu li {
+        padding: 1em;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+
+    }
+
+    #nav-menu.showmenu {
+        display: block;
+    }
+
+    /* hero section */
+    .hero-content{
+        margin-left: 2em;
+    }
+    /* project section */
+    .card {
+        width: 713px;
+        padding: 20px;
+    }
+
+    .slider-container {
+        width: 70%;
+    }
+
+    .prev,
+    .next {
+        font-size: 2rem;
+    }
+
+    .project-container {
+        position: relative;
+        top: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* navbr section */
+    .cvbtn {
+        display: none;
+    }
+
+    .download-link {
+        display: block;
+    }
+
+    #nav-menu {
+        display: none;
+        position: absolute;
+        right: 5%;
+        top: 20%;
+        z-index: 1000;
+        flex-direction: column;
+        background-color: var(--second-dark-clr);
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #nav-menu li {
+        padding: 1em;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+
+    }
+
+    #nav-menu.showmenu {
+        display: block;
+    }
+
+    /* hero container */
+    .hero-container>div {
+        margin: 1em;
+    }
+
+    .hero-container{
+        padding-bottom: 1.2rem;
+    }
+    /* project section */
+    .slider-container {
+        width: 30%;
+    }
+
+    .card {
+        width: 416px;
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .project-container {
+        position: relative;
+        top: 10%;
+    }
+
+    #about {
+        padding: 0px 20px;
+    }
+}
+
+
+@media (max-width: 425px) {
+
+    /* navbr section */
+    .cvbtn {
+        display: none;
+    }
+
+    .download-link {
+        display: block;
+    }
+
+    #nav-menu {
+        display: none;
+        position: absolute;
+        right: 5%;
+        top: 20%;
+        z-index: 1000;
+        flex-direction: column;
+        background-color: var(--second-dark-clr);
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #nav-menu li {
+        padding: 1em;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+
+    }
+
+    #nav-menu.showmenu {
+        display: block;
+    }
+
+    /* hero section */
+    .hero-container {
+        display: block;
+    }
+
+    .hero-container>div {
+        margin: 2em;
+    }
+
+    /* skill section */
+    .skill-container {
+        display: block;
+    }
+
+    /* project section */
+    .project-container {
+        position: relative;
+        display: block;
+        height: 100%;
+    }
+
+    .card {
+        width: 415px;
+    }
+
+    /* about section */
+    .about-container {
+        position: relative;
+        top: 10%;
+        display: block;
+        height: 100%;
+    }
+
+    .about-content {
+        position: relative;
+        top: 50px;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+    footer {
+        position: relative;
+        display: block;
+        top: 4rem;
+    }
+}

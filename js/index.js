@@ -3,8 +3,10 @@
         const navMenu = document.getElementById('nav-menu');
         if (navMenu.style.display === "none" || navMenu.style.display === "") {
             navMenu.style.display = "block";
+            menuIcon.className = "fa fa-times";
         } else {
             navMenu.style.display = "none";
+            menuIcon.className = "fa-solid fa-bars"
         }
     });
 

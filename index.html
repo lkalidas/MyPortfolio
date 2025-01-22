@@ -6,25 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalidas Portfolio</title>
     <!-- Meta description -->
-<meta name="description" content="Welcome to Lkalidas' portfolio showcasing web development projects, skills, and achievements. Explore innovative designs and coding expertise.">
+    <meta name="description"
+        content="Welcome to L.kalidas' portfolio showcasing web development projects, skills, and achievements. Explore innovative designs and coding expertise.">
 
-<!-- Meta keywords -->
-<meta name="keywords" content="Lkalidas portfolio, web developer, Java developer, front-end projects, back-end development, full-stack developer, personal projects, web design, programming skills, software development, portfolio website">
+    <!-- Meta keywords -->
+    <meta name="keywords"
+        content="L.kalidas portfolio, web developer, Java developer, front-end projects, back-end development, full-stack developer, personal projects, web design, programming skills, software development, portfolio website">
 
-<!-- Meta author -->
-<meta name="author" content="Lkalidas">
+    <!-- Meta author -->
+    <meta name="author" content="L.kalidas">
 
-<!-- Robots meta tag to ensure search engine indexing -->
-<meta name="robots" content="index, follow">
+    <!-- Robots meta tag to ensure search engine indexing -->
+    <meta name="robots" content="index, follow">
 
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
     <script src="https://kit.fontawesome.com/abba5d5882.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
-    <!-- heaer section -->
+    <!-- header section -->
     <header>
         <nav class="navbar">
             <a href="#" class="logo">KALI<span>DAS</span></a>
@@ -71,11 +74,11 @@
             <div class="skill-container">
                 <div class="skill-tech1-container">
                     <h1>technical skill</h1>
-                    <div class="progross Java">Java<span></span></div>
-                    <div class="progross css">css<span></span></div>
-                    <div class="progross html">html<span></span></div>
-                    <div class="progross javascript">javascript<span></span></div>
-                    <div class="progross sql">sql<span></span></div>
+                    <div class="progross Java"><i class="fa-brands fa-java"></i> Java<span></span></div>
+                    <div class="progross css"><i class="fa-brands fa-css3-alt"></i> css<span></span></div>
+                    <div class="progross html"><i class="fa-brands fa-html5"></i> html<span></span></div>
+                    <div class="progross javascript"><i class="fa-brands fa-js"></i> javascript<span></span></div>
+                    <div class="progross sql"><i class="fa-solid fa-database"></i> sql<span></span></div>
                 </div>
 
                 <div class="skill-tech2-container">
@@ -125,46 +128,52 @@
             <div class="project-container">
 
                 <div class="slider-container">
-                    <div class="slider">        
-            <div class="card-container">
-                <div class="card">
-                    <img src="images/portfolio-photo.jpeg" alt="portfolio Image" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">My Portfolio</h3>
-                        <p class="card-description">
-                            This is a brief description of the card content. You can customize it with any text you like.
-                        </p>
-                        <a href="#" class="card-button">Link</a>
+                    <div class="slider">
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="images/portfolio-image.png" alt="portfolio Image" class="card-image">
+                                <div class="card-content">
+                                    <h3 class="card-title">My Portfolio</h3>
+                                    <p class="card-description">
+                                        A responsive portfolio website showcasing my skills, projects, and contact
+                                        details. Built with HTML, CSS, and JavaScript to highlight my expertise
+                                        effectively.
+                                    </p>
+                                    <a href="#" class="card-button">Link</a>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="images/portfolio-image.png" alt="portfolio Image" class="card-image">
+                                <div class="card-content">
+                                    <h3 class="card-title">My Portfolio</h3>
+                                    <p class="card-description">
+                                        A responsive portfolio website showcasing my skills, projects, and contact
+                                        details. Built with HTML, CSS, and JavaScript to highlight my expertise
+                                        effectively.
+                                    </p>
+                                    <a href="#" class="card-button">Link</a>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="images/portfolio-image.png" alt="portfolio Image" class="card-image">
+                                <div class="card-content">
+                                    <h3 class="card-title">My Portfolio</h3>
+                                    <p class="card-description">
+                                        A responsive portfolio website showcasing my skills, projects, and contact
+                                        details. Built with HTML, CSS, and JavaScript to highlight my expertise
+                                        effectively.
+                                    </p>
+                                    <a href="#" class="card-button">Link</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="card">
-                    <img src="images/portfolio-photo.jpeg" alt="portfolio Image" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">My Portfolio</h3>
-                        <p class="card-description">
-                            This is a brief description of the card content. You can customize it with any text you like.
-                        </p>
-                        <a href="#" class="card-button">Link</a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <img src="images/portfolio-photo.jpeg" alt="portfolio Image" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">My Portfolio</h3>
-                        <p class="card-description">
-                            This is a brief description of the card content. You can customize it with any text you like.
-                        </p>
-                        <a href="#" class="card-button">Link</a>
-                    </div>
+                    <button class="prev" onclick="prevSlide()"><i class="fa-solid fa-angles-left aro1"></i></button>
+                    <button class="next" onclick="nextSlide()"><i class="fa-solid fa-angles-right aro2"></i></button>
                 </div>
             </div>
-        </div>
-        <button class="prev" onclick="prevSlide()"><i class="fa-solid fa-angles-left aro1"></i></button>
-        <button class="next" onclick="nextSlide()"><i class="fa-solid fa-angles-right aro2"></i></button>
-    </div>
-</div>
         </section>
 
         <!-- about section-->
