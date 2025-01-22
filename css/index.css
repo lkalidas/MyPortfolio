@@ -184,6 +184,7 @@ header .navbar ul li {
 }
 
 .hero-content h2 span {
+    font-size: 1.5rem;
     color: var(--global-clr);
 }
 
