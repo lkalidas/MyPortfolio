@@ -11,42 +11,7 @@
 } */
 
 @media (max-width: 1024px) {
-    .cvbtn {
-        display: none;
-    }
-
-    .download-link {
-        display: block;
-    }
-
-    #nav-menu {
-        display: none;
-        position: absolute;
-        right: 5%;
-        top: 10%;
-        z-index: 1000;
-        flex-direction: column;
-        background-color: var(--second-dark-clr);
-        width: 200px;
-        border-radius: 5px;
-        border: 1px solid gainsboro;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    #nav-menu li {
-        padding: 1em;
-        text-align: center;
-    }
-
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-
-    }
-
-    #nav-menu.showmenu {
-        display: block;
-    }
+    
 
     /* hero section */
     .hero-content{
@@ -73,54 +38,69 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
-    /* navbr section */
-    .cvbtn {
-        display: none;
+    .navbar{
+        backdrop-filter: none;
     }
 
-    .download-link {
-        display: block;
-    }
-
-    #nav-menu {
+    .navbar-container .navbar-menu{
         display: none;
-        position: absolute;
-        right: 5%;
-        top: 20%;
-        z-index: 1000;
         flex-direction: column;
-        background-color: var(--second-dark-clr);
-        width: 200px;
-        border-radius: 5px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        align-items: flex-start;
+        gap: 1.7rem !important;
+        position: absolute;
+        height: 100vh;
+        width: 250px;
+        top: 0;
+        right: 0;
+        padding: 5rem 1.5rem;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, .5);
+        backdrop-filter: blur(10px);
+        background: rgba(17, 46, 66, 0.4);
+        
     }
 
-    #nav-menu li {
-        padding: 1em;
-        text-align: center;
-    }
-
-    .menu-icon {
+    .navbar-toggle{
         display: block;
-        cursor: pointer;
-
+        z-index: 1000;
     }
 
-    #nav-menu.showmenu {
-        display: block;
+    .navbar-container .navbar-menu.active{
+        display: flex;
     }
 
+    .navbar-toggle.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .navbar-toggle.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .navbar-toggle.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .cvbtn{
+        display: flex;
+        position: absolute;
+        right: 13%;
+        z-index: 1000;
+        font-size: 1rem;
+    }
     /* hero container */
     .hero-container>div {
         margin: 1em;
     }
 
     .hero-container{
+        flex-direction: column;
         padding-bottom: 1.2rem;
     }
 
+    .hero-image{
+        width: 50%;
+    }
     /* skill section */
 
     .skill-tech1-container h1, .skill-tech2-container h1{
@@ -147,49 +127,33 @@
     }
 }
 
+@media (max-width: 660px){
+    .cvbtn{
+        right: 15%;
+        font: .8rem;
+    }
+}
 
+
+@media (max-width: 500px){
+    .cvbtn{
+        right: 17%;
+        font-size: 1em;
+    }
+}
 @media (max-width: 425px) {
 
     /* navbr section */
-    .cvbtn {
-        display: none;
+    .navbar-logo{
+        font-size: 1.7rem;
     }
-
-    .download-link {
-        display: block;
+    .cvbtn{
+        font-size: .8em;
+        right: 20%;
     }
-
-    #nav-menu {
-        display: none;
-        position: absolute;
-        right: 5%;
-        top: 20%;
-        z-index: 1000;
-        flex-direction: column;
-        background-color: var(--second-dark-clr);
-        width: 200px;
-        border-radius: 5px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    #nav-menu li {
-        padding: 1em;
-        text-align: center;
-    }
-
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-
-    }
-
-    #nav-menu.showmenu {
-        display: block;
-    }
-
     /* hero section */
     .hero-container {
-        display: block;
+        flex-direction: column;
     }
 
     .hero-container>div {

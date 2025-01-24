@@ -240,3 +240,9 @@
 .about-image {
     animation: slideRight 1.1s linear forwards;
 }
+
+/* project section */
+
+.project-container{
+    animation: fadein 3s linear forwards;
+}

@@ -1,14 +1,21 @@
-    const menuIcon = document.querySelector('.menu-icon i');
-    menuIcon.addEventListener("click", function () {
-        const navMenu = document.getElementById('nav-menu');
-        if (navMenu.style.display === "none" || navMenu.style.display === "") {
-            navMenu.style.display = "block";
-            menuIcon.className = "fa fa-times";
-        } else {
-            navMenu.style.display = "none";
-            menuIcon.className = "fa-solid fa-bars"
-        }
-    });
+    // const menuIcon = document.querySelector('.menu-icon i');
+    // menuIcon.addEventListener("click", function () {
+    //     const navMenu = document.getElementById('nav-menu');
+    //     if (navMenu.style.display === "none" || navMenu.style.display === "") {
+    //         navMenu.style.display = "block";
+    //         menuIcon.className = "fa fa-times";
+    //     } else {
+    //         navMenu.style.display = "none";
+    //         menuIcon.className = "fa-solid fa-bars"
+    //     }
+    // });
+
+    const navbarToggle = document.querySelector('.navbar-toggle');
+    const navbarMenu = document.querySelector('.navbar-menu');
+    navbarToggle.addEventListener('click', () => {
+        navbarMenu.classList.toggle('active');
+        navbarToggle.classList.toggle('active');
+    })
 
     let currentIndex = 0;
 

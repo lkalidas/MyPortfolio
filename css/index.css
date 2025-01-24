@@ -29,6 +29,7 @@ body {
     color: var(--text-clr);
     line-height: 1.3;
     overflow-x: hidden;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     font-size: 16px;
     margin: 0;
@@ -36,91 +37,94 @@ body {
     transition: background-color 0.3s ease;
 }
 
-header {
-    width: 100%;
-    background: transparent;
-    z-index: 1000;
-    padding: 1.5rem 0;
-}
-
-header .navbar ul li a::after {
-    content: '';
-    position: absolute;
-    background: var(--global-clr);
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -2px;
-    pointer-events: none;
-    transition: .3s;
-}
-
-.navbar ul li a:hover,
-.navbar ul li .active {
-    color: var(--global-clr);
-}
-
-header .navbar ul li a:hover::after,
-.navbar ul li .active::after {
-    width: 100%;
-}
-
+/* header section */
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: .5rem 10%;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: .5rem 2%;
 }
 
-.logo {
-    position: relative;
-    color: var(--text-clr);
-    font-weight: 700;
-    font-size: 2rem;
-}
-
-.logo span {
-    color: var(--global-clr)
-}
-
-.navbar ul {
+.navbar-container{
     display: flex;
-    gap: 1rem;
-    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+    max-width: 1600px;
 }
 
-header .navbar ul li {
+.navbar-logo{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.navbar-logo span{
+    color: var(--global-clr);
+}
+ .navbar-container .navbar-menu{
+    display: flex;
+    text-align: center;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.navbar-container .navbar-menu li{
     position: relative;
     margin-right: 20px;
 }
 
-.navbar ul li a {
+.navbar-container .navbar-menu li a{
     position: relative;
+    color: var(--text-clr);
     font-size: 1.3rem;
     font-weight: 500;
     margin-left: 20px;
-    color: var(--text-clr);
+    white-space: nowrap;
 }
 
-.cvbtn {
+.navbar-toggle{
+    display: none;
+    background: transparent;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.cvbtn{
     position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    font-size: 1rem;
+    gap: .5rem;
+    font-size: 1.2rem;
     font-weight: 600;
+    padding: 10px;
     background: transparent;
     color: var(--text-clr);
-    padding: 12px;
     border: 1px groove var(--btn-clr);
     border-radius: 5px;
-    box-shadow: 0 0 5px var(--btn-clr);
     cursor: pointer;
-    transition: .5s;
-    z-index: 1;
+    box-shadow: 0 0 5px var(--btn-clr);
+    transition: 0.5s;
 }
-
 .cvbtn::before {
     content: '';
     position: absolute;
@@ -142,6 +146,28 @@ header .navbar ul li {
     box-shadow: 0 0 5px var(--btn-clr),
         0 0 10px var(--btn-clr),
         0 0 15px var(--btn-clr);
+}
+
+.navbar-menu li a::after{
+    content: '';
+    position: absolute;
+    background: var(--global-clr);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.navbar-container ul li a:hover,
+.navbar-container ul li .active {
+    color: var(--global-clr);
+}
+
+.navbar-container ul li a:hover::after,
+.navbar-container ul li .active::after {
+    width: 100%;
 }
 
 /* hero section */
@@ -258,11 +284,7 @@ header .navbar ul li {
     height: 100%;
 }
 
-.skill-tech1-container .Java,
-.css,
-.html,
-.javascript,
-.sql {
+.skill-tech1-container:is(.Java, .css, .html, .javascript, .sql) {
     position: relative;
 }
 
@@ -406,7 +428,8 @@ header .navbar ul li {
     display: inline-block;
     padding: 10px 20px;
     font-size: 1em;
-    color: #fff;
+    font-weight: 600;
+    color: #fff; 
     background-color: #007bff;
     text-decoration: none;
     border-radius: 5px;
@@ -555,4 +578,3 @@ footer {
     border-radius: 50%;
 
 }
-
