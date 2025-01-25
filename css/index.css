@@ -562,22 +562,3 @@ footer {
     width: 100%;
     min-width: 100%;
 }
-
-/* scrollbar style */
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--global-clr);
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover{
-    background: var(--btn-clr);
-}
